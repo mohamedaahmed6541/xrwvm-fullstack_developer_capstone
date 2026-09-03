@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Best Cars Dealership</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <style>
+    .about-hero {
+      background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
+      color: white;
+      padding: 4rem 0;
+      text-align: center;
+    }
+    .about-hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .about-hero .lead {
+      font-size: 1.25rem;
+      opacity: 0.9;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .about-content {
+      padding: 3rem 0;
+    }
+    .about-section {
+      margin-bottom: 3rem;
+    }
+    .about-section h2 {
+      color: #1e3a5f;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 3px solid #2c5282;
+      display: inline-block;
+    }
+    .about-section p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #4a5568;
+    }
+    .contact-info-card {
+      background: #f7fafc;
+      border-radius: 8px;
+      padding: 2rem;
+      border-left: 4px solid #2c5282;
+      height: 100%;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .contact-info-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+    .contact-info-card h3 {
+      color: #1e3a5f;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .contact-info-card .icon {
+      width: 40px;
+      height: 40px;
+      background: #2c5282;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.25rem;
+    }
+    .contact-info-card p {
+      color: #4a5568;
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+    .contact-info-card a {
+      color: #2c5282;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .contact-info-card a:hover {
+      color: #1e3a5f;
+      text-decoration: underline;
+    }
+    .form-panel {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      padding: 2.5rem;
+      border: 1px solid #e2e8f0;
+    }
+    .form-panel h2 {
+      color: #1e3a5f;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 2px solid #2c5282;
+      display: inline-block;
+    }
+    .form-control {
+      border-radius: 6px;
+      border: 1px solid #cbd5e0;
+      padding: 0.75rem 1rem;
+      font-size: 1rem;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .form-control:focus {
+      border-color: #2c5282;
+      box-shadow: 0 0 0 3px rgba(44, 82, 130, 0.15);
+    }
+    .form-label {
+      font-weight: 500;
+      color: #2d3748;
+      margin-bottom: 0.5rem;
+    }
+    .btn-primary {
+      background: #2c5282;
+      border-color: #2c5282;
+      padding: 0.875rem 2rem;
+      font-weight: 600;
+      font-size: 1rem;
+      border-radius: 6px;
+      transition: background-color 0.2s, transform 0.1s;
+    }
+    .btn-primary:hover {
+      background: #1e3a5f;
+      border-color: #1e3a5f;
+      transform: translateY(-1px);
+    }
+    .btn-primary:active {
+      transform: translateY(0);
+    }
+    .map-container {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      border: 1px solid #e2e8f0;
+    }
+    .map-container iframe {
+      display: block;
+      width: 100%;
+      height: 400px;
+      border: none;
+    }
+    .navbar-brand-text {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: white !important;
+    }
+    .social-links a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #2c5282;
+      color: white;
+      text-decoration: none;
+      margin-right: 0.75rem;
+      transition: background-color 0.2s, transform 0.2s;
+    }
+    .social-links a:hover {
+      background: #1e3a5f;
+      transform: translateY(-2px);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1e3a5f;">
+    <div class="container-fluid">
+      <a class="navbar-brand navbar-brand-text" href="/">Best Cars Dealership</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="about-hero">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p class="lead">We'd love to hear from you. Whether you have a question about a vehicle, need financing assistance, or want to schedule a test drive, our team is here to help.</p>
+    </div>
+  </header>
+
+  <main class="container about-content">
+    <section class="about-section">
+      <h2>Get in Touch</h2>
+      <p style="margin-bottom: 2rem;">Visit our showroom, give us a call, or send us a message below. We're open seven days a week for your convenience and look forward to serving you.</p>
+      
+      <div class="row g-4 mb-5">
+        <div class="col-md-4">
+          <div class="contact-info-card">
+            <h3><span class="icon">📍</span> Visit Us</h3>
+            <p><strong>Best Cars Dealership - Main Location</strong></p>
+            <p>12345 Auto Mall Drive</p>
+            <p>Springfield, IL 62704</p>
+            <p>United States</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="contact-info-card">
+            <h3><span class="icon">📞</span> Call Us</h3>
+            <p><strong>Sales Department</strong></p>
+            <p><a href="tel:+1-800-555-0123">(800) 555-0123</a></p>
+            <p><strong>Service & Parts</strong></p>
+            <p><a href="tel:+1-800-555-0124">(800) 555-0124</a></p>
+            <p><strong>Financing</strong></p>
+            <p><a href="tel:+1-800-555-0125">(800) 555-0125</a></p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="contact-info-card">
+            <h3><span class="icon">✉️</span> Email Us</h3>
+            <p><strong>General Inquiries</strong></p>
+            <p><a href="mailto:info@bestcars.com">info@bestcars.com</a></p>
+            <p><strong>Sales Questions</strong></p>
+            <p><a href="mailto:sales@bestcars.com">sales@bestcars.com</a></p>
+            <p><strong>Service & Support</strong></p>
+            <p><a href="mailto:service@bestcars.com">service@bestcars.com</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 mb-5">
+        <div class="col-md-6">
+          <div class="contact-info-card">
+            <h3><span class="icon">🕐</span> Business Hours</h3>
+            <p><strong>Monday - Friday:</strong> 8:00 AM - 8:00 PM</p>
+            <p><strong>Saturday:</strong> 9:00 AM - 7:00 PM</p>
+            <p><strong>Sunday:</strong> 10:00 AM - 6:00 PM</p>
+            <p style="margin-top: 1rem;"><em>Service department closes 1 hour earlier</em></p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="contact-info-card">
+            <h3><span class="icon">🔧</span> Service Center Hours</h3>
+            <p><strong>Monday - Friday:</strong> 7:00 AM - 6:00 PM</p>
+            <p><strong>Saturday:</strong> 8:00 AM - 4:00 PM</p>
+            <p><strong>Sunday:</strong> Closed</p>
+            <p style="margin-top: 1rem;"><em>Appointments recommended</em></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <h2>Send Us a Message</h2>
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="form-panel">
+            <h2>Contact Form</h2>
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Full Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="John Smith" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email Address <span class="text-danger">*</span></label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="john.smith@email.com" required>
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" name="phone" placeholder="(555) 123-4567">
+              </div>
+              <div class="mb-3">
+                <label for="subject" class="form-label">Subject <span class="text-danger">*</span></label>
+                <select class="form-control" id="subject" name="subject" required>
+                  <option value="">Select a topic...</option>
+                  <option value="sales">Vehicle Purchase Inquiry</option>
+                  <option value="financing">Financing & Credit</option>
+                  <option value="service">Service & Maintenance</option>
+                  <option value="parts">Parts & Accessories</option>
+                  <option value="feedback">Feedback / Complaint</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Tell us how we can help you..." required></textarea>
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </div>
+              <p class="text-muted text-center mt-3" style="font-size: 0.875rem;">By submitting this form, you agree to our <a href="#">Privacy Policy</a> and <a href="#">Terms of Use</a>.</p>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="map-container">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3064.123456789!2d-89.6501234!3d39.7812345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fa123456789ab%3A0x123456789abcdef!2s12345%20Auto%20Mall%20Dr%2C%20Springfield%2C%20IL%2062704!5e0!3m2!1sen!2sus!4v1699999999999!5m2!1sen!2sus" 
+              width="600" 
+              height="450" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Best Cars Dealership Location">
+            </iframe>
+          </div>
+          <p class="text-center text-muted mt-2" style="font-size: 0.875rem;">12345 Auto Mall Drive, Springfield, IL 62704</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <h2>Follow Us</h2>
+      <p style="margin-bottom: 1.5rem;">Stay connected with Best Cars Dealership for the latest inventory updates, special offers, and automotive tips.</p>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+        <a href="#" aria-label="Twitter"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-4 mt-5" style="background-color: #1a202c !important;">
+    <div class="container">
+      <div class="row mb-3">
+        <div class="col-md-4">
+          <h5>Best Cars Dealership</h5>
+          <p class="text-muted small">12345 Auto Mall Drive<br>Springfield, IL 62704</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <p class="text-muted small">
+            <a href="/" class="text-white text-decoration-none">Home</a> | 
+            <a href="/about" class="text-white text-decoration-none">About</a> | 
+            <a href="/contact" class="text-white text-decoration-none">Contact</a>
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h5>Connect</h5>
+          <p class="text-muted small">
+            <a href="tel:+1-800-555-0123" class="text-white text-decoration-none">(800) 555-0123</a><br>
+            <a href="mailto:info@bestcars.com" class="text-white text-decoration-none">info@bestcars.com</a>
+          </p>
+        </div>
+      </div>
+      <hr style="border-color: #4a5568;">
+      <p class="mb-0 small">&copy; 2024 Best Cars Dealership. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
